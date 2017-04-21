@@ -4,7 +4,6 @@ import sys
 import json
 
 import numpy as np
-#import PIL.image as pil
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 
@@ -19,8 +18,9 @@ class App:
 		self.show_wagons()
 
 	def read_stdin(self):
-		for line in sys.stdin:
-			self.wagons.append(json.loads(line))
+		with open('Hackathon/output/cache/Dummies_wagonSegmenter_output.txt','r') as file:
+			for line in file.readlines():
+				self.wagons.append(json.loads(line))
 
 		self.offset = self.wagons[0]["wagonEnd"]
 		self.wagons = self.wagons[1:]
