@@ -40,7 +40,7 @@ class App:
 		self.heatmap_edges = cv2.filter2D(self.edges, -1, heat_kernel).astype('float')
 
 	def show_wagons(self):
-		for wagon in self.wagons[5:15]:
+		for wagon in self.wagons[0:15]:
 			start = wagon["wagonStart"] #+ self.offset
 			end = wagon["wagonEnd"] #+ self.offset
 			f, ax = plt.subplots(3,1, sharex = True, sharey= True)
@@ -66,7 +66,7 @@ class App:
 				plt.close(f2)
 				self.heatmap_edges[yi-30:yi+30, start+xi-150:start+xi+150] = 0.0
 			
-			f.savefig("wagon_" + str(start)) + "_complete.png")
+			f.savefig("wagon_" + str(start) + "_complete.png")
 			plt.close(f)
 if __name__ == '__main__':
     App().run()
