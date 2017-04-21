@@ -51,6 +51,7 @@ class App:
 			
 			orig_max = np.max(self.heatmap_edges[:, start:end])
 			while np.max(self.heatmap_edges[:, start:end]) > 0.95 * orig_max:
+				i = 1
 				index = np.argmax(self.heatmap_edges[:, start:end].astype('float'))
 				yi, xi = np.unravel_index(index,self.heatmap_edges[:, start:end].shape)
 				interesting_patch = self.image[yi-50:yi+50, start+xi-250:start+xi+250]
@@ -61,7 +62,11 @@ class App:
 				inverted = PIL.ImageOps.invert(interesting_pict)
 				ax2[1].imshow(inverted)
 				ax2[1].set_title(pt.image_to_string(inverted, config='outputbase digits'))
-				plt.show()
+				f2.savefig("wagon" + str(start) + "_patch_" + str(i) + ".png")
+				plt.close(f2)
 				self.heatmap_edges[yi-30:yi+30, start+xi-150:start+xi+150] = 0.0
+			
+			f.savefig("wagon_" + str(start)) + "_complete.png")
+			plt.close(f)
 if __name__ == '__main__':
     App().run()
