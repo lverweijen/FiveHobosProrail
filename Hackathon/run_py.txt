@@ -1,0 +1,39 @@
+wagonSegmenter output: {"wagonStart": 0, "wagonEnd": 460}
+wagonSegmenter output: {"wagonStart": 460, "wagonEnd": 2399}
+wagonSegmenter output: {"wagonStart": 2399, "wagonEnd": 4392}
+wagonSegmenter output: {"wagonStart": 4392, "wagonEnd": 6493}
+wagonSegmenter output: {"wagonStart": 6493, "wagonEnd": 8609}
+wagonSegmenter output: {"wagonStart": 8609, "wagonEnd": 10790}
+wagonSegmenter output: {"wagonStart": 10790, "wagonEnd": 12820}
+wagonSegmenter output: {"wagonStart": 12820, "wagonEnd": 15046}
+wagonSegmenter output: {"wagonStart": 15046, "wagonEnd": 17030}
+wagonSegmenter output: {"wagonStart": 17030, "wagonEnd": 19184}
+wagonSegmenter output: {"wagonStart": 19184, "wagonEnd": 21097}
+wagonSegmenter output: {"wagonStart": 21097, "wagonEnd": 23134}
+wagonSegmenter output: {"wagonStart": 23134, "wagonEnd": 25178}
+wagonSegmenter output: {"wagonStart": 25178, "wagonEnd": 27413}
+numberRecogniser output: {"wagonStart": 0, "number": "00000000003-4"}
+numberRecogniser output: {"wagonStart": 460, "number": "20054515118-1"}
+wagonSegmenter output: {"wagonStart": 27413, "wagonEnd": 29290}
+numberRecogniser output: {"wagonStart": 2399, "number": "11111111112-1"}
+wagonSegmenter output: {"wagonStart": 29290, "wagonEnd": 31057}
+numberRecogniser output: {"wagonStart": 4392, "number": "77717112431-9"}
+wagonSegmenter output: {"wagonStart": 31057, "wagonEnd": 33243}
+numberRecogniser output: {"wagonStart": 6493, "number": "33339333733-7"}
+wagonSegmenter output: {"wagonStart": 33243, "wagonEnd": 35517}
+numberRecogniser output: {"wagonStart": 8609, "number": "11113531133-5"}
+wagonSegmenter output: 
+numberRecogniser output: {"wagonStart": 10790, "number": "31311177145-4"}
+numberRecogniser output: {"wagonStart": 12820, "number": "11311111114-3"}
+numberRecogniser output: {"wagonStart": 15046, "number": "11111117411-1"}
+numberRecogniser output: {"wagonStart": 17030, "number": "14311111111-6"}
+numberRecogniser output: {"wagonStart": 19184, "number": "75155752541-5"}
+numberRecogniser output: {"wagonStart": 21097, "number": "11115432434-2"}
+numberRecogniser output: {"wagonStart": 23134, "number": "12142711333-1"}
+numberRecogniser output: {"wagonStart": 25178, "number": "11773511057-1"}
+numberRecogniser output: {"wagonStart": 27413, "number": "11111111110-5"}
+numberRecogniser output: {"wagonStart": 29290, "number": "15151123111-1"}
+numberRecogniser output: {"wagonStart": 31057, "number": "71111111511-1"}
+numberRecogniser output: {"wagonStart": 33243, "number": "34551251145-1"}
+numberRecogniser output: 
+Processing complete

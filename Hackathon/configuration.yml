@@ -1,0 +1,35 @@
+%YAML:1.0
+teamName: "Dummies" # PLEASE CHANGE THIS
+video:
+  input: "testdata/2017-03-29_14-20-24.mp4"
+  output: "output/frames/%05d.png"
+  scale: 1
+cache: "output/cache"
+regionMatcher:
+  command: "python3 modules/Python/regionMatcher.py"
+  #command: "python3 modules/Python/dummyRegionMatcher.py"
+  #command: "java -cp modules/Java:modules/Java/json-simple-1.1.1.jar DummyRegionMatcher"
+  #command: "modules/C++/build/DummyRegionMatcher"
+  showInput: False
+  showOutput: False
+wagonSegmenter:
+  command: "python3 modules/Python/wagonSegmenter.py 2> /dev/null"
+  #command: "python3 modules/Python/dummyWagonSegmenter.py"
+  #command: "java -cp modules/Java:modules/Java/json-simple-1.1.1.jar DummyWagonSegmenter"
+  #command: "modules/C++/build/DummyWagonSegmenter"
+  showInput: False
+  showOutput: True
+numberLocaliser:
+  command: "../DetectText/build/DetectText"
+  # command: "python3 modules/Python/dummyNumberLocaliser.py"
+  #command: "java -cp modules/Java:modules/Java/json-simple-1.1.1.jar DummyNumberLocaliser"
+  #command: "modules/C++/build/DummyNumberLocaliser"
+  showInput: False
+  showOutput: False
+numberRecogniser:
+  command: "modules/C++/build/NumberRecogniser 2> /dev/null"
+  #command: "python3 modules/Python/dummyNumberRecogniser.py"
+  #command: "java -cp modules/Java:modules/Java/json-simple-1.1.1.jar DummyNumberRecogniser"
+  #command: "modules/C++/build/DummyNumberRecogniser"
+  showInput: False
+  showOutput: True
