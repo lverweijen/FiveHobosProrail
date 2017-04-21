@@ -16,9 +16,7 @@ class App:
 
 	def run(self):
 		self.read_stdin()
-		print(" File read")
 		self.read_imgs()
-		print("Imgs read")
 		self.show_numbers()
 		
 
@@ -51,9 +49,10 @@ class App:
 				ys = list(map(lambda x: x[1], path))
 				xs = list(map(lambda x: x[0], path))
 
-				fix, ax = plt.subplots(1,1)
-				ax.imshow(img[min(xs):max(xs), min(ys):max(ys)])
-				plt.show()
+				if (max(xs)-min(xs) > 5 and max(ys)-min(ys) > 8):
+					fix, ax = plt.subplots(1,1)
+					ax.imshow(img[min(ys):max(ys), min(xs):max(xs)])
+					plt.show()
 
 
 
